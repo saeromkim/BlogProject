@@ -11,10 +11,11 @@
     "mongoose": "^5.2.12"
   },
   "devDependencies": {
+    "cross-env": "^5.2.0",
     "nodemon": "^1.18.10"
   },
   "scripts": {
-    "start": "node src",
-    "start:dev": "nodemon --watch src/ src/index.js"
+    "start": "cross-env NODE_PATH=src node src",
+    "start:dev": "cross-env NODE_PATH=src nodemon --watch src/ src/index.js"
   }
 }
