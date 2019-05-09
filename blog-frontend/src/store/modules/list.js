@@ -3,14 +3,14 @@ import { createAction, handleActions } from 'redux-actions';
 import { Map } from 'immutable';
 import { pender } from 'redux-pender';
 
-//actions types
+// action types
 
-//action creators
+// action creators
 
-//initial state
+// initial state
 const initialState = Map({});
 
-//reducer
+// reducer
 export default handleActions({
 
-}, initialState)
+}, initialState);
